@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="demotest.Pages.ItemPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:demotest.Pages"
+             mc:Ignorable="d" 
+            d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="Black"
+            BorderThickness="4">
+        <Grid>
+            <Label x:Name="LabelRemaining" Content="{Binding Title}" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" Height="44" Width="710" FontSize="18" FontWeight="Bold"/>
+            <Label Content="Deadline" FontSize="16" Margin="28,91,680,323"></Label>
+            <Label x:Name="LabelType" Content="{Binding Deadline }" FontSize="16" HorizontalAlignment="Left" Margin="115,93,0,0" VerticalAlignment="Top" Width="222" Height="36"/>
+            <Label Content="Status" FontSize="16" Margin="33,223,703,188"></Label>
+            <Label x:Name="LabelMinimal" Content="{Binding Status}" FontSize="16" HorizontalAlignment="Left" Margin="115,223,0,0" VerticalAlignment="Top" Height="31" Width="362"/>
+            <Label x:Name="LabelName" Content="{Binding WorkType}" FontSize="16" HorizontalAlignment="Left" Margin="127,156,0,0" VerticalAlignment="Top" Width="524" Height="30"/>
+            <Label x:Name="LabelSellers" Content="{Binding Grade}" FontSize="16" HorizontalAlignment="Left" Margin="124,307,0,0" VerticalAlignment="Top" Width="423" Height="35"/>
+            <Label Content="Work Type" FontSize="16" Margin="28,156,661,256"/>
+            <Label Content="Executor" FontSize="16" Margin="30,307,689,100"/>
+            <Button Name="EditTask" Width="200" Height="40" Margin="26,378,566,24" Content="Редактировать" Click="Button_Click" Visibility="Visible"></Button>
+            <Button Name="DeleteTask" Width="200" Height="40" Margin="536,378,56,24" Content="Удалить" Click="DeleteTask_Click"></Button>
+        </Grid>
+    </Border>
+</UserControl>

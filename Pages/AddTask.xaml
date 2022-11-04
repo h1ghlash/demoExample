@@ -1,0 +1,21 @@
+﻿<Window x:Class="demotest.Pages.AddTask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demotest.Pages"
+        mc:Ignorable="d"
+        Title="AddTask" Height="700" Width="550"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,-6">
+        <TextBlock Text="Добавить задачу" FontSize="24" FontWeight="Medium" Margin="149,37,137,492"></TextBlock>
+        <TextBox Style="{StaticResource placeHolder}" Width="240" Height="30" Margin="106,134,101,405" BorderBrush="Black" Tag="Title" Name="Title"></TextBox>
+        <TextBox Style="{StaticResource placeHolder}" Width="240" Height="30" Margin="106,182,101,357" BorderBrush="Black" Tag="DeadLine" Name="Deadline"/>
+        <TextBox Style="{StaticResource placeHolder}" Width="240" Height="30" Margin="106,232,101,307" BorderBrush="Black" Tag="Difficulty" Name="Difficulty"/>
+        <TextBox Style="{StaticResource placeHolder}" Width="240" Height="30" Margin="132,329,126,231" BorderBrush="Black" Tag="Time" Name="Time"/>
+        <ComboBox Width="240" Height="30" Margin="131,288,127,272" BorderBrush="Black" BorderThickness="2" Foreground="Black" Name="StatusBox"></ComboBox>
+        <TextBox Style="{StaticResource placeHolder}" Width="240" Height="30" Margin="132,376,126,184" BorderBrush="Black" Tag="WokType" Name="WorkType"/>
+        <Button Content="Добавить" RenderTransformOrigin="0.506,1.324" Margin="132,496,126,147" Click="Button_Click"/>
+        <Button Content="Вернуться" RenderTransformOrigin="0.506,1.324" Margin="132,568,126,82" Click="Button_Click_1"/>
+    </Grid>
+</Window>
