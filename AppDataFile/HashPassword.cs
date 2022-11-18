@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 
 namespace demotest.AppDataFile
 {
-    class HashPassword
+    public class HashPassword
     {
         public static string hashPassword(string password)
         {

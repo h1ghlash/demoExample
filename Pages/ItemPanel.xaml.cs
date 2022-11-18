@@ -26,6 +26,10 @@ namespace demotest.Pages
         {
             InitializeComponent();
             this.DataContext = this;
+            if(Status == "Завершена" || Status == "Отменена")
+            {
+                EditTask.Visibility = Visibility.Hidden;
+            }
         }
 
         public int ID { get; set; }
